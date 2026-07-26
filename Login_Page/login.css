@@ -1,0 +1,131 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    /* background-color: rgb(64, 152, 246); */
+    
+}
+
+.nav {
+    background-color: rgb(128, 171, 228);
+    color: rgb(0, 0, 0);
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px;
+
+
+}
+
+a {
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+}
+
+.links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    /* font-display: swap; */
+
+}
+
+.fa-regular {
+    font-size: 20px;
+    color: black;
+}
+
+p {
+    background-color: red;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 15px;
+    left: 1507px;
+
+}
+
+.box {
+    margin: 0 auto;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(223, 154, 203);
+    margin-top: 50px;
+    gap:20px;
+    border-radius:10px;
+    color: white;;
+    position: relative;
+
+
+
+
+
+}
+
+.form{
+    
+    display:flex;
+    
+    flex-direction:column;
+    height:100px;
+    gap:20px;
+    
+    
+}
+.form div{
+    height:200px;
+}
+
+.login {
+    background-color: aquamarine;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+
+}
+
+.input-box {
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+}
+.forgot{
+    color:rgb(118, 118, 118)
+}
+.forgot:hover{
+    text-decoration: underline;
+    
+    
+}
+.welcome{
+    font: 200px;
+}
+/* .cross{
+    background-color: rgb(4, 40, 40);
+} */
+
+
+.icon{
+    position: absolute;
+    bottom: 370px;
+    left:270px;
+}
+.question{
+    position: absolute;
+    bottom: 190px;
+    left:225px;
+    color: black;
+    /* font:200px; */
+}
