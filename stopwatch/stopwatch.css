@@ -1,0 +1,118 @@
+/* 
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:#1e1e1e;
+    color: white;
+    border-radius: 20px;
+    width: 350px;
+    min-height: 500px;
+    flex-direction: column;
+    gap:20px;
+    padding: 20px;
+    margin:20px;
+    border:  2px white solid;
+    box-shadow:5px 5px 30px white;
+
+
+
+}
+.navbar{
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 100px;;
+} */
+
+
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#dddddd;
+    font-family: "Poppins", sans-serif;
+}
+.container{
+    width: 380px;
+    height:500px;
+    background:#dddddd;
+    border-radius:35px;
+    box-shadow:10px 10px 25px rgba(0,0,0,0.18),
+    -10px -10px 25px rgba(255,255,255,0.8);
+    /* border:2px solid #00e5ff; */
+    
+}
+.navbar{
+    text-align:center;
+    font-size:32px;
+    font-weight:700;
+    /* letter-spacing:3px; */
+    text-transform:uppercase;
+    margin-top:25px;
+    /* color:#00E5FF; */
+}
+#clock{
+    margin:35px auto;
+    width:260px;
+    padding:20px;
+    text-align:center;
+    font-size:38px;
+    font-weight:bold;
+    box-shadow:
+    inset 6px 6px 12px rgba(0,0,0,0.15),
+    inset -6px -6px 12px rgba(255,255,255,0.8);
+}
+.buttons{
+    /* margin:35px auto;
+    padding:25px; */
+    display:flex;
+    /* text-align:center; */
+    justify-content:center;
+    gap: 15px;
+    /* width: 350px; */
+
+
+}
+.laparea{
+    text-align:center;
+    overflow-y:auto;
+    box-shadow:
+    inset 6px 6px 12px rgba(0,0,0,0.15),
+    inset -6px -6px 12px rgba(255,255,255,0.8);
+    height:120px;
+    padding:10px;
+    margin:35px auto;
+    border-radius:15px;
+    width:300px;
+}
+button{
+    width:75px;
+    height:45px;
+    border-radius:15px;
+    border:none;
+    background:#dddddd;
+    box-shadow:
+    inset 6px 6px 12px rgba(0,0,0,0.15),
+    inset -6px -6px 12px rgba(255,255,255,0.8);
+    cursor:pointer;
+    font-size: 15px;
+    transition: 0.2s;
+    
+}
+button:active{
+    transform:translateY(3px); 
+}
+
+
+button:hover{
+    transform:translateY(-3px);
+}
