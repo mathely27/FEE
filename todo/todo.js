@@ -6,12 +6,29 @@ const list = document.getElementById("taskList");
 const pending=document.getElementById("pendingCount");
 
 let count=0;
+let isEditing=false;
+let editingTask=null;
 
 add.addEventListener("click",function(){
     if(task.value.trim()==""){
         alert("Please Enter a valid task!!");
         return;
     }
+
+
+
+    if (isEditing) {
+
+    editingTask.innerText = task.value;
+    isEditing = false;
+
+    editingTask = null;
+    task.value = "";
+
+    add.innerText = "Add";
+
+    return;
+}
         const taskCard=document.createElement("div");
 
         const taskText=document.createElement("p");
@@ -37,6 +54,16 @@ add.addEventListener("click",function(){
 
         const editBtn = document.createElement("button");
         editBtn.innerText = "Edit";
+
+        editBtn.addEventListener("click", function(){
+            task.value = taskText.innerText;
+            isEditing = true;
+            editingTask = taskText;
+            add.innerText = "Save";
+            task.focus();
+
+
+        })
 
         const deleteBtn = document.createElement("button");
         deleteBtn.innerText = "Delete";
